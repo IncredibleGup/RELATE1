@@ -1,0 +1,15 @@
+type: ChoiceQuestion
+id: krylov
+value: 2
+prompt: |
+
+    # もんだい２
+
+    雨が降ったらどうなりますか？
+
+choices:
+
+  - ~CORRECT~ 濡れます
+  - 塗れます
+  - 乗れます
+  - 傘がなくなりました
