@@ -41,7 +41,7 @@ chunks:
         <nav class="navbar navbar-default alert-success">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">JLPT N5完全復習コース</a>
+              <a class="navbar-brand" href="#">JLPT N3完全復習コース</a>
             </div>
             <a class="navbar-brand" href="/">
               <button type="button" class="btn btn-primary">
@@ -53,12 +53,12 @@ chunks:
         <div id="clock-02" class="text-right"></div>
         <small>聞くは一時の恥、聞かぬは一生の恥(Better to ask the way than to go astray.)</small>
         <div class="list-group">
-          <a href="flow:001-hiragana" class="list-group-item list-group-item-action flex-column align-items-start">
+          <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">ひらがなの勉強   <span class="badge badge-primary">基礎</span></h4>
+              <h4 class="mb-1">日本語 の LMS <span class="badge badge-primary">基礎</span></h4>
             </div>
             <small>想定時間</small>
-            <p class="mb-1">N3語彙1</p>
+            <p class="mb-1">N5語彙1</p>
             <button type="button" class="btn btn-primary">
               受講する 
             </button>
