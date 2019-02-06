@@ -70,16 +70,21 @@ groups:
         value: 2
         prompt: |
 
-            # 漢字の読み方をこたえよう
+            #   語彙を選ぼう
 
-            ### 大きな　え　が　あります
+            ### 私は、困ったとき、母親より(　　)に、いろいろ相談する。
+
 
         choices:
 
-          - ~CORRECT~ おおきな
-          - だいきな
-          - おきな
-          - たいきな
+          - ~CORRECT~ おば
+          - 友情
+          - つないで
+          - 祝う
+          - 別々
+          - 親しい
+          - 連れて
+          - しばらく
 
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
