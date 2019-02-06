@@ -1,7 +1,7 @@
 chunks:
 
 -
-    title: "N5復習コース　TIJ東京日本語研修所　RELATE評価用"
+    title: "N3語彙　TIJ東京日本語研修所　RELATE評価用"
     id: welcome
     rules:
     -
@@ -58,7 +58,7 @@ chunks:
               <h4 class="mb-1">ひらがなの勉強   <span class="badge badge-primary">基礎</span></h4>
             </div>
             <small>想定時間</small>
-            <p class="mb-1">ひらがなの勉強をしましょう</p>
+            <p class="mb-1">N3語彙1</p>
             <button type="button" class="btn btn-primary">
               受講する 
             </button>
@@ -68,7 +68,7 @@ chunks:
               <h4 class="mb-1">確認問題にチャレンジ   <span class="badge badge-primary">テスト</span></h4>
             </div>
             <small>想定時間</small>
-            <p class="mb-1">JLPT　N5の問題です</p>
+            <p class="mb-1">N3語彙2</p>
             <button type="button" class="btn btn-primary">
               受講する 
             </button>
