@@ -60,7 +60,7 @@ chunks:
             <small>想定時間</small>
             <p class="mb-1">N5語彙1</p>
             <button type="button" class="btn btn-primary">
-              受講する 
+              受講する xxx
             </button>
           </a>
           <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
