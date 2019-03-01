@@ -55,7 +55,7 @@ chunks:
         <div class="list-group">
           <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">日本語 の LMS <span class="badge badge-primary">基礎</span></h4>
+              <h4 class="mb-1">日本語 の LMS (tHUji)<span class="badge badge-primary">基礎</span></h4>
             </div>
             <small>想定時間</small>
             <p class="mb-1">N5語彙1</p>
