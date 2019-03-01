@@ -1,4 +1,4 @@
-chunks:
+﻿chunks:
 
 -
     title: "N3語彙　TIJ東京日本語研修所　RELATE評価用"
@@ -55,7 +55,11 @@ chunks:
         <div class="list-group">
           <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
+<<<<<<< HEAD
               <h4 class="mb-1">日本語 の LMS (tHUji)<span class="badge badge-primary">基礎</span></h4>
+=======
+              <h4 class="mb-1">日本語 の LMS (THUJI no desu)<span class="badge badge-primary">基礎</span></h4>
+>>>>>>> d64bb389e40a62017720df42eef5614014a86f8b
             </div>
             <small>想定時間</small>
             <p class="mb-1">N5語彙1</p>
