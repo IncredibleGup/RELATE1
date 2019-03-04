@@ -86,7 +86,7 @@ groups:
           - 親しい
           - 連れて
           - しばらく
-
+          
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
@@ -106,7 +106,7 @@ groups:
           - ~CORRECT~　顔
           - 顎
           - 頬
-
+          
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
@@ -126,7 +126,7 @@ groups:
           - で
           - へ
           - を
-
+          
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
@@ -146,12 +146,11 @@ groups:
           - 父はかいしゃいんです
           - 父はうんてんしゅです
           - ~CORRECT~ 父はびょういんではたらいています
-
+          
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-	
         type: ChoiceQuestion
         id: krylov5
         value: 2
@@ -171,7 +170,7 @@ groups:
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 		
-    -	
+    -
         type: ChoiceQuestion
         id: krylov6
         value: 2
@@ -188,7 +187,7 @@ groups:
           -といいます
           - ~CORRECT~とおもいます
           - とかんがえます
-
+          
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
@@ -214,7 +213,6 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-		
         type: ChoiceQuestion
         id: krylov8
         value: 2
@@ -231,12 +229,10 @@ groups:
           -　かって
           - かちて
           - さんかして
-
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-	
         type: ChoiceQuestion
         id: krylov9
         value: 2
@@ -258,7 +254,6 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-	
         type: ChoiceQuestion
         id: krylov10
         value: 2
@@ -275,12 +270,10 @@ groups:
           - 考えて
           - 見て
           - 探して
-
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-	
         type: ChoiceQuestion
         id: krylov11
         value: 2
@@ -338,7 +331,6 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-	
         type: InlineMultiQuestion
         id: inlinemulti2
         value: 10
@@ -377,7 +369,6 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-	
         type: InlineMultiQuestion
         id: inlinemulti3
         value: 10
@@ -389,7 +380,7 @@ groups:
 	
         question: |
 
-            この ボタン を[[blank1]] おゆがでます。のんだの とき きをつけてください、とてもあついですよ。
+            このボタンを[[blank1]]おゆがでます。のんだのとききをつけてください、とてもあついですよ。
 
         answers:
 
@@ -411,7 +402,6 @@ groups:
                 correct_answer:
                 - <plain> あつい
                 - <plain> 暑い
-				
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
