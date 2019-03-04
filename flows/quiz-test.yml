@@ -171,7 +171,7 @@ groups:
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 		
-	-	
+    -	
         type: ChoiceQuestion
         id: krylov6
         value: 2
