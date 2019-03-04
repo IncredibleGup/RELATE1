@@ -152,7 +152,7 @@ groups:
 
     -
 	
-		 type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov5
         value: 2
         prompt: |
@@ -172,7 +172,7 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 		
 	-	
-		type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov6
         value: 2
         prompt: |
@@ -185,7 +185,7 @@ groups:
 
           - あります
           - できます
-		  -　といいます
+          -といいます
           - ~CORRECT~とおもいます
           - とかんがえます
 
@@ -193,7 +193,7 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-		type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov7
         value: 2
         prompt: |
@@ -206,7 +206,7 @@ groups:
 
           -　あげて
           - くださて
-		  -　~CORRECT~もらて
+          -~CORRECT~もらて
           - よごれて
           - やぶれて
 
@@ -215,7 +215,7 @@ groups:
 
     -
 		
-		type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov8
         value: 2
         prompt: |
@@ -228,7 +228,7 @@ groups:
 
           -　できて
           - ~CORRECT~まけて
-		  -　かって
+          -　かって
           - かちて
           - さんかして
 
@@ -237,7 +237,7 @@ groups:
 
     -
 	
-		type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov9
         value: 2
         prompt: |
@@ -249,17 +249,17 @@ groups:
         choices:
 
           - ~CORRECT~みっか
-		  -　さんにち
+          -　さんにち
           - ついたち
           - よっか
-		  - ふつか
+          - ふつか
 
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
 	
-		type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov10
         value: 2
         prompt: |
@@ -271,17 +271,17 @@ groups:
         choices:
 
           - 注意
-		  -~CORRECT~注意して
+          -~CORRECT~注意して
           - 考えて
           - 見て
-		  - 探して
+          - 探して
 
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
 	
-		type: ChoiceQuestion
+        type: ChoiceQuestion
         id: krylov11
         value: 2
         prompt: |
@@ -293,7 +293,7 @@ groups:
         choices:
 
           - こまない
-		  -~CORRECT~こんでいる
+          -~CORRECT~こんでいる
           - とめている
           - こまなっている
 
@@ -301,8 +301,8 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
-		type: InlineMultiQuestion
-        id: inlinemulti
+        type: InlineMultiQuestion
+        id: inlinemulti1
         value: 10
         prompt: |
 
@@ -310,9 +310,9 @@ groups:
 
             Complete the following paragraph.
 	
-		question: |
+        question: |
 
-			山田さん、きょうはむすこのたんじょうびですから、おさきに[[blank1]]。 あと7時にわたしのうちへ[[blank2]]ください。
+            山田さん、きょうはむすこのたんじょうびですから、おさきに[[blank1]]。 あと7時にわたしのうちへ[[blank2]]ください。
 
         answers:
 
@@ -330,17 +330,17 @@ groups:
                 type: ShortAnswer
                 width: 10em
                 hint: request
-				hint_title: Hint
+                hint_title: Hint
                 correct_answer:
                 - <plain> いって
 				
-		answer_explanation:
+        answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
 	
-		type: InlineMultiQuestion
-        id: inlinemulti
+        type: InlineMultiQuestion
+        id: inlinemulti2
         value: 10
         prompt: |
 
@@ -348,7 +348,7 @@ groups:
 
             Complete the following paragraph.
 	
-		question: |
+        question: |
 
             あしたくうこうでりょうしんを[[blank1]]にいきます。 5年あとであいますからほんとうに[[blank2]]です。
 
@@ -368,18 +368,18 @@ groups:
                 type: ShortAnswer
                 width: 10em
                 hint: happy
-				hint_title: Hint
+                hint_title: Hint
                 correct_answer:
                 - <plain> 嬉しい
-				- <plain> うれしい
+                - <plain> うれしい
 				
-		answer_explanation:
+        answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
 	
-		type: InlineMultiQuestion
-        id: inlinemulti
+        type: InlineMultiQuestion
+        id: inlinemulti3
         value: 10
         prompt: |
 
@@ -387,7 +387,7 @@ groups:
 
             Complete the following paragraph.
 	
-		question: |
+        question: |
 
             この ボタン を[[blank1]] おゆがでます。のんだの とき きをつけてください、とてもあついですよ。
 
@@ -407,12 +407,12 @@ groups:
                 type: ShortAnswer
                 width: 10em
                 hint: hot
-				hint_title: Hint
+                hint_title: Hint
                 correct_answer:
                 - <plain> あつい
-				- <plain> 暑い
+                - <plain> 暑い
 				
-		answer_explanation:
+        answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
 
