@@ -309,9 +309,9 @@ groups:
         answers:
             
             blank1:
-                type:ShortAnswer
+                type: ShortAnswer
                 width: 5em
-                required: true
+                required: True
                 hint: you say when you leave early
                 hint_title: hint
                 choices:
@@ -319,9 +319,9 @@ groups:
                     - <plain> 失礼します
 
             blank2: 
-                type:ShortAnswer
+                type: ShortAnswer
                 width: 5em
-                required: true    
+                required: True    
                 hint: request
                 hint_title: hint
                 choices:
@@ -337,24 +337,24 @@ groups:
 
         question: |
         
-            あしたくうこうでりょうしんを[[blank1]]にいきます。 5年あとであいますからほんとうに[[blank2]]です。
+            あしたくうこうでりょうしんを[[blank3]]にいきます。 5年あとであいますからほんとうに[[blank4]]です。
 
         answers:
 
-            blank1:
+            blank3:
                 type: ShortAnswer
                 width: 5em
-                required: true   
+                required: True   
                 hint: welcome 
                 hint_title: hint
                 choices:
                     - <plain> むかえ
                     - <plain> 迎え
                     
-            blank2:
-                type:ShortAnswer
+            blank4:
+                type: ShortAnswer
                 width: 5em
-                required: true
+                required: True
                 hint: happy
                 hint_title: hint
                 choices:
@@ -372,24 +372,24 @@ groups:
 
         question: |
         
-            このボタンを[[blank1]]おゆがでます。のんだのとききをつけてください、とても[[blank2]]ですよ。
+            このボタンを[[blank5]]おゆがでます。のんだのとききをつけてください、とても[[blank6]]ですよ。
 			
         answers:
         
-            blank1:
+            blank5:
                 type: ShortAnswer
                 width: 5em
-                required: true
+                required: True
                 hint: press
                 hint_title: hint
                 choices:
                     - <plain> おすと
                     - <plain> 押すと
                     
-            blank2:
+            blank6:
                 type: ShortAnswer
                 width: 5em
-                required: true
+                required: True
                 hint: hot
                 hint_title: hint
                 choices:
