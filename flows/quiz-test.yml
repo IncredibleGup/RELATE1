@@ -289,7 +289,7 @@ groups:
             - とめている
             - こまなっている
 
-        answer_explanation
+        answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
@@ -336,6 +336,7 @@ groups:
             Complete the following paragraph.
 
         question: |
+        
             あしたくうこうでりょうしんを[[blank1]]にいきます。 5年あとであいますからほんとうに[[blank2]]です。
 
         answers:
@@ -370,6 +371,7 @@ groups:
             Complete the following paragraph.
 
         question: |
+        
             このボタンを[[blank1]]おゆがでます。のんだのとききをつけてください、とても[[blank2]]ですよ。
 			
         answers:
