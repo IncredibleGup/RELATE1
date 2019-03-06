@@ -96,8 +96,8 @@ groups:
         choices:
         
             - 体
-            - ~CORRECT~顔
-            -　顎
+            - ~CORRECT~ 顔
+            - 顎
             - 頬
             
         answer_explanation:
@@ -241,10 +241,10 @@ groups:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
             
     -
-         type: ChoiceQuestion
-         id: krylov10
-         value: 2
-         prompt: |
+        type: ChoiceQuestion
+        id: krylov10
+        value: 2
+        prompt: |
          
             # 漢字に　なおす
             ### みちを わたるとき （ちゅういして） ください。
