@@ -72,6 +72,8 @@ groups:
         value: 2
         prompt: |
         
+            ### 語彙を選ぼう
+        
             # 私は、困ったとき、母親より（　　）、いろいろ相談する。
             
         choices:
@@ -98,7 +100,6 @@ groups:
             ### さとうさんの　（かお）　がみえません。
             
         choices:
-        
             - 体
             - ~CORRECT~顔
             -　顎
@@ -134,6 +135,7 @@ groups:
         prompt: |
         
             # 同じ意味はどれ
+            
             ### 父はいしゃです。
             
         choices:
@@ -153,6 +155,7 @@ groups:
         prompt: |
         
             # 同じ意味はどれ
+            
             ### あなたはなんさいですか。
             
         choices:
@@ -172,6 +175,7 @@ groups:
         prompt: |
         
             # かっこのなかを答えよう
+            
             ### 私はジョン（  ）。
             
         choices:
@@ -192,6 +196,7 @@ groups:
         prompt: |
         
             # かっこのなかを答えよう
+            
             ### あなたのかさはかりて（）もいい。
             
         choices:
@@ -212,6 +217,7 @@ groups:
         prompt: |
         
             # かっこのなかを答えよう
+            
             ### きょうは試合が（　）、とてもかなしい。
             
         choices:
@@ -231,6 +237,7 @@ groups:
         prompt: |
         
             # かっこのなかのことばと同じこたえよう
+            
             ### おばさんは（3日）に日本へつきます。
             
         choices:
@@ -251,6 +258,7 @@ groups:
          prompt: |
          
             # 漢字に　なおす
+            
             ### みちを わたるとき （ちゅういして） ください。
             
         choices:
@@ -271,6 +279,7 @@ groups:
         prompt: |
         
             # かっこうのなかを答えよう
+            
             ### じこでみちを（　）。
             
         choices:
@@ -290,6 +299,7 @@ groups:
         prompt: |
         
             # An example of inline multi question.
+            
             Complete the following paragraph
             
         question: |
@@ -368,9 +378,11 @@ groups:
         prompt: |
         
             # 文章もんだい
+            
             あなたの趣味を書いてください
             
 completion_text: |
 
     # お疲れ様でした
+    
     練習問題はこれで終了です、しっかり復習しましょう
