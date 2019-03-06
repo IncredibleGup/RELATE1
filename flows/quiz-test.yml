@@ -18,362 +18,395 @@ title: "N5確認問題"
 description: |
 
     # N5確認問題
-    
+
 rules:
     start:
     -
-        if_before: end_week1
-        if_has_role: [student,ta,instructor]
-        if_has_fewer_seesion_than: 4
-        may_start_new_sessions: True
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
         may_list_existing_sessions: True
-        
+
     -
-        may_start_new_sessions: False
+        may_start_new_session: False
         may_list_existing_sessions: True
-        
+
     access:
-    
+    -
         message: "ユーザーによって表示される注意書きです"
         permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
-        
+
     grade_identifier: la_quiz
-    grade_aggreagation_strategy: use_latest
-    
+    grade_aggregation_strategy: use_latest
+
     grading:
     -
         credit_percent: 100
-        
+
 groups:
 -
     id: intro
     pages:
-    
+
     -
         type: Page
         id: welcome
         content: |
-        
-            # さおさらいしましょう
-                
-            >ボタンを押してください
-                
+
+            # さあおさらいしましょう
+
+            ＞ボタンを押してください
+
 -
     id: quiz_start
-    shuffle: False
+    shuffle: false
     pages:
-    
-    # Pages can be given inl-line(like this one) or brought in by including.
-    # them from other lines, as below
-    
+	 
+    # Pages can be given in-line (like this one) or brought in by including
+    # them from other files, as below.
+	
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov
         value: 2
         prompt: |
-        
-            ### 語彙を選ぼう
-        
-            # 私は、困ったとき、母親より（　　）、いろいろ相談する。
-            
+		
+            #   語彙を選ぼう
+
+            ### 私は、困ったとき、母親より(　　)に、いろいろ相談する。
+			
         choices:
-            - ~CORRECT~ おば
-            - 友情
-            - つないで
-            - 祝う
-            - 別々
-            - 親しい
-            - 連れて
-            - しばらく
-            
+           - ~CORRECT~ おば
+           - 友情
+           - つないで
+           - 祝う
+           - 別々
+           - 親しい
+           - 連れて
+           - しばらく
+           
         answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+           間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
+			
     -
-        type: ChoiceQuestion
-        id: krylov2
+        type: ChoiceQuestions
+        id:krylov2
         value: 2
         prompt: |
-        
-            # 漢字に　なおす
-            
-            ### さとうさんの　（かお）　がみえません。
-            
+		
+            # 漢字になおそう
+
+            ### さとうさんの（かお）がみえません。
+			
         choices:
             - 体
             - ~CORRECT~顔
-            -　顎
+            - 顎
             - 頬
             
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-        type: ChoiceQuestion
-        id: krylov3
+        type: ChoiceQuestions 
+        id:krylov3
         value: 2
         prompt: |
-        
-            # かっこうのなかをこたえよう
-            
-            ### 彼　電車　（　）　のります。
-            
+  
+            # かっこのなかを答えよう
+
+            ### 彼は車（　）のりました。
+			
         choices:
-            - ~CORRECT~に
+        
+            - に
             - で
             - へ
             - を
             
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+
     -
-        type: ChoiceQuestion
-        id: krylov4
+        type: ChoiceQuestions
+        id:krylov4
         value: 2
         prompt: |
-        
+		
             # 同じ意味はどれ
-            
+
             ### 父はいしゃです。
             
         choices:
+		
             - 父はきょうしです
             - 父はかいしゃいんです
             - 父はうんてんしゅです
             - ~CORRECT~父はびょういんではたらいています
-            
+			
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov5
         value: 2
         prompt: |
-        
+		
             # 同じ意味はどれ
-            
-            ### あなたはなんさいですか。
-            
+
+            ### あなたはなんさいですか
+			
         choices:
+		    
             - あなたはなんにんですか
             - あなたは何回ですか
             - あなたは何番ですか
             - ~CORRECT~あなたはおいくつですか
-            
+			
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov6
         value: 2
         prompt: |
-        
+		
             # かっこのなかを答えよう
-            
-            ### 私はジョン（  ）。
-            
+
+            ### 私はジョン（ ）。
+			
         choices:
+		
             - あります
             - できます
-            - とおもいます
-            - ~CORRECT~といいます
+            - といいます
+            - ~CORRECT~とおもいます
             - とかんがえます
-            
+			
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov7
         value: 2
         prompt: |
-        
+		
             # かっこのなかを答えよう
-            
+
             ### あなたのかさはかりて（）もいい。
-            
+			
         choices:
+		    
             - あげて
             - くださて
             - ~CORRECT~もらて
             - よごれて
             - やぶれて
-            
+			
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov8
         value: 2
         prompt: |
-        
+		
             # かっこのなかを答えよう
-            
+
             ### きょうは試合が（　）、とてもかなしい。
-            
+			
         choices:
-            - ~CORRECT~まけて
+		
             - できて
+            - ~CORRECT~まけて
+            - かって
             - かちて
             - さんかして
-            
+			
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov9
-        value: 2
+        value:2
         prompt: |
-        
+		  
             # かっこのなかのことばと同じこたえよう
-            
+
             ### おばさんは（3日）に日本へつきます。
-            
+			
         choices:
+        
+            - ~CORRECT~みっか
             - さんにち
             - ついたち
             - よっか
             - ふつか
-            - ~CORRECT~みっか
-            
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+			
     -
-         type: ChoiceQuestion
-         id: krylov10
-         value: 2
-         prompt: |
-         
-            # 漢字に　なおす
-            
-            ### みちを わたるとき （ちゅういして） ください。
-            
+        type: ChoiceQuestions
+        id: krylov10
+        value: 2
+        prompt: |
+       
+            # かっこうのなかのひらがなはかんじになおす
+
+            ### みちをわたるとき（ちゅういして）ください。
+
         choices:
+         
             - 注意
-            - 考えて
             - ~CORRECT~注意して
+            - 考えて
             - 見て
             - 探して
-            
+
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+
     -
-        type: ChoiceQuestion
+        type: ChoiceQuestions
         id: krylov11
         value: 2
         prompt: |
-        
-            # かっこうのなかを答えよう
-            
+
+            # かっこうのなかを答えよう　
+
             ### じこでみちを（　）。
-            
+
         choices:
+
             - こまない
+            - ~CORRECT~こんでいる
             - とめている
             - こまなっている
-            - ~CORRECT~こんでいる
-            
+
         answer_explanation:
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
+
     -
         type: InlineMultiQuestion
         id: inlinemulti
         value: 10
         prompt: |
-        
-            # An example of inline multi question.
-            
-            Complete the following paragraph
-            
+       
+            # An InlineMultiQuestion example
+
+            Complete the following paragraph.
+
         question: |
-        
+		
             山田さん、きょうはむすこのたんじょうびですから、おさきに[[blank1]]。 あと7時にわたしのうちへ[[blank2]]ください。
-            
+
         answers:
-        
+            
             blank1:
                 type: ShortAnswer
-                width: 5 em
-                hint: when you leave early
+                width: 5em
+                required: True
+                hint: you say when you leave early
                 hint_title: hint
-                correct_answer:
+                choices:
                     - <plain> しつれいします
                     - <plain> 失礼します
-                    
-            blank2:
+
+            blank2: 
                 type: ShortAnswer
-                width: 5 em
-                correct_answer:
-                    - <plain> いって
-                    
+                width: 5em
+                required: True    
+                hint: request
+                hint_title: hint
+                choices:
+                    - <palin> いって
+
     -
         type: InlineMultiQuestion
         id: inlinemulti2
         value: 10
+        prompt: |
+
+            Complete the following paragraph.
+
         question: |
         
             あしたくうこうでりょうしんを[[blank3]]にいきます。 5年あとであいますからほんとうに[[blank4]]です。
-            
+
         answers:
-        
+
             blank3:
                 type: ShortAnswer
-                width: 5 em
-                correct_answer:
+                width: 5em
+                required: True   
+                hint: welcome 
+                hint_title: hint
+                choices:
                     - <plain> むかえ
                     - <plain> 迎え
                     
             blank4:
                 type: ShortAnswer
-                width: 5 em
-                correct_answer:
+                width: 5em
+                required: True
+                hint: happy
+                hint_title: hint
+                choices:
                     - <plain> 嬉しい
                     - <plain> うれしい
-                    
+				
+
     -
         type: InlineMultiQuestion
         id: inlinemulti3
-        value: 10
+        value:10
+        prompt: |
+
+            Complete the following paragraph.
+
         question: |
         
-            この ボタン を[[blank5]] おゆがでます。のんだの とき きをつけてください、とても[[blank6]]ですよ。
-            
+            このボタンを[[blank5]]おゆがでます。のんだのとききをつけてください、とても[[blank6]]ですよ。
+			
         answers:
         
             blank5:
                 type: ShortAnswer
-                width: 5 em
-                correct_answer:
+                width: 5em
+                required: True
+                hint: press
+                hint_title: hint
+                choices:
                     - <plain> おすと
                     - <plain> 押すと
                     
             blank6:
                 type: ShortAnswer
-                width: 5 em
-                correct_answer:
+                width: 5em
+                required: True
+                hint: hot
+                hint_title: hint
+                choices:
                     - <plain> あつい
                     - <plain> 暑い
-                    
+			
     -
         type: SurveyTextQuestion
         id: fear
         widget: textarea
         prompt: |
-        
+		
             # 文章もんだい
-            
-            あなたの趣味を書いてください
-            
-completion_text: |
 
-    # お疲れ様でした
-    
-    練習問題はこれで終了です、しっかり復習しましょう
+            あなたの趣味を書いてください
+								
+        completion_text: |
+        # お疲れ様でした
+
+            練習問題はこれで終了です、しっかり復習しましょう
