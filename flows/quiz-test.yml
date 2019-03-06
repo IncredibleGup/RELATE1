@@ -152,7 +152,7 @@ groups:
 
     -
 
-     -
+    
         type: ChoiceQuestion
         id: krylovn5
         value: 2
