@@ -1,6 +1,6 @@
-title: "ひらがなの勉強"
+title: "N5日本語の勉強"
 description: |
-    # ひらがなの勉強
+    # Learn Japanese Language easily in English 
 
 rules:
     access:
@@ -18,10 +18,11 @@ pages:
     content: |
 
         # N5日本語の勉強
-
-        ひらがなの勉強をしよう
+        #6p9Il_j0zjc?start=1269
+        Here is the overview. 
         {% from "macros.jinja" import youtube %}
-        {{ youtube("6p9Il_j0zjc?start=1269") }}
+        {{ youtube("ZNBxAEjH2A8") }}
+       
 -
     type: Page
     id: vectors
