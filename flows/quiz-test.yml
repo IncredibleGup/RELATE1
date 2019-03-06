@@ -5,7 +5,7 @@
 
 # This brings in a helper function that is used to include pages from
 # separate files. This is optional, but conceivably useful.
-{% from "yaml-macros.yml" import indented_include %}
+{%from "yaml-macros.yml" import indented_include%}
 
 
 title: "N5確認問題"
@@ -289,7 +289,7 @@ groups:
             - とめている
             - こまなっている
 
-        answer_explanation:
+        answer_explanation
             間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
 
     -
@@ -309,9 +309,9 @@ groups:
         answers:
             
             blank1:
-                type: ShortAnswer
+                type:ShortAnswer
                 width: 5em
-                required: True
+                required: true
                 hint: you say when you leave early
                 hint_title: hint
                 choices:
@@ -319,9 +319,9 @@ groups:
                     - <plain> 失礼します
 
             blank2: 
-                type: ShortAnswer
+                type:ShortAnswer
                 width: 5em
-                required: True    
+                required: true    
                 hint: request
                 hint_title: hint
                 choices:
@@ -344,7 +344,7 @@ groups:
             blank3:
                 type: ShortAnswer
                 width: 5em
-                required: True   
+                required: true   
                 hint: welcome 
                 hint_title: hint
                 choices:
@@ -352,9 +352,9 @@ groups:
                     - <plain> 迎え
                     
             blank4:
-                type: ShortAnswer
+                type:ShortAnswer
                 width: 5em
-                required: True
+                required: true
                 hint: happy
                 hint_title: hint
                 choices:
@@ -379,7 +379,7 @@ groups:
             blank5:
                 type: ShortAnswer
                 width: 5em
-                required: True
+                required: true
                 hint: press
                 hint_title: hint
                 choices:
@@ -389,7 +389,7 @@ groups:
             blank6:
                 type: ShortAnswer
                 width: 5em
-                required: True
+                required: true
                 hint: hot
                 hint_title: hint
                 choices:
@@ -409,4 +409,4 @@ groups:
         completion_text: |
         # お疲れ様でした
 
-            練習問題はこれで終了です、しっかり復習しましょう
+        練習問題はこれで終了です、しっかり復習しましょう
