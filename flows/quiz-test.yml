@@ -1,3 +1,6 @@
+# This is a YAML comment, which is entirely ignored.
+
+# YAML files in Relate are preprocessed with Jinja2.
 # See http://jinja.pocoo.org/docs/latest/templates/ for syntax.
 
 # This brings in a helper function that is used to include pages from
@@ -5,7 +8,7 @@
 {% from "yaml-macros.yml" import indented_include %}
 
 
-title: #N5確認問題
+title: "N5確認問題"
 
 # The "|" character introduces a 'block literal', which means all text indented below
 # it is taken literally. The description property holds text marked up with 'Markdown'.
@@ -41,18 +44,19 @@ rules:
     -
         credit_percent: 100
         
-    groups:
+groups:
+-
+    id: intro
+    pages:
+    
     -
-        id: intro
-        pages:
-        -
-            type: Page
-            id: welcome
-            content: |
-            
-                # さおさらいしましょう
+        type: Page
+        id: welcome
+        content: |
+        
+            # さおさらいしましょう
                 
-                >ボタンを押してください
+            >ボタンを押してください
                 
 -
     id: quiz_start
