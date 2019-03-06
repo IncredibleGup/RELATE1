@@ -63,6 +63,16 @@
               受講する xxx
             </button>
           </a>
+          <a href="flow:Lesson" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
+            </div>
+            <small>videos</small>
+            <p class="mb-1">N5 Lesson</p>
+            <button type="button" class="btn btn-primary">
+              受講する xxx
+            </button>
+          </a>
           <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1">確認問題にチャレンジ   <span class="badge badge-primary">テスト</span></h4>
