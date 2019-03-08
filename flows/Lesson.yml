@@ -18,8 +18,9 @@ pages:
     content: |
 
         # N5日本語の勉強
-        #6p9Il_j0zjc?start=1269
+        
         Here is the overview. 
+        
         {% from "macros.jinja" import youtube %}
         {{ youtube("ZNBxAEjH2A8") }}
        
@@ -104,4 +105,4 @@ completion_text: |
 
     # End of Linear Algebra Recap
 
-    Now you're ready to take the [quiz](flow:quiz-test).
+    Now you're ready to take the [learn](flow:Lesson).
