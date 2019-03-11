@@ -65,7 +65,7 @@ groups:
     
     -
         type: ChoiceQuestion
-        id: krylov
+        id: qz
         value: 2
         prompt: |
         
@@ -81,12 +81,9 @@ groups:
             - 連れて
             - しばらく
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov2
+        id: qz2
         value: 2
         prompt: |
         
@@ -101,12 +98,9 @@ groups:
             - 顎
             - 頬
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: cast2
+        id: qz3
         value: 2
         prompt: |
         
@@ -121,12 +115,9 @@ groups:
             - へ
             - を
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov4
+        id: qz4
         value: 2
         prompt: |
         
@@ -141,12 +132,9 @@ groups:
             - 父はうんてんしゅです
             - ~CORRECT~父はびょういんではたらいています
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov5
+        id: qz5
         value: 2
         prompt: |
         
@@ -161,12 +149,9 @@ groups:
             - あなたは何番ですか
             - ~CORRECT~あなたはおいくつですか
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov6
+        id: qz6
         value: 2
         prompt: |
         
@@ -182,12 +167,9 @@ groups:
             - ~CORRECT~といいます
             - とかんがえます
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov7
+        id: qz7
         value: 2
         prompt: |
         
@@ -203,12 +185,9 @@ groups:
             - よごれて
             - やぶれて
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov8
+        id: qz8
         value: 2
         prompt: |
         
@@ -223,12 +202,9 @@ groups:
             - かちて
             - さんかして
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov9
+        id: qz9
         value: 2
         prompt: |
         
@@ -243,12 +219,9 @@ groups:
             - ふつか
             - ~CORRECT~みっか
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov10
+        id: qz10
         value: 2
         prompt: |
         
@@ -264,12 +237,9 @@ groups:
             - 見て
             - 探して
             
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
-            
     -
         type: ChoiceQuestion
-        id: krylov11
+        id: qz11
         value: 2
         prompt: |
         
@@ -282,9 +252,6 @@ groups:
             - とめている
             - こまなっている
             - ~CORRECT~こんでいる
-            
-        answer_explanation:
-            間違えた人はここをチェックしよう　<a href="http://www.jlpt.jp/e/samples/sample12.html">http://www.jlpt.jp/e/samples/sample12.html</a>
             
     -
         type: InlineMultiQuestion
@@ -377,17 +344,9 @@ groups:
                 correct_answer:
                     - <plain> あつい
                     - <plain> 暑い
-                    
-    -
-        type: SurveyTextQuestion
-        id: fear
-        widget: textarea
-        prompt: |
-        
-            # 文章もんだい
-            あなたの趣味を書いてください
             
 completion_text: |
 
-    # お疲れ様でした
-    練習問題はこれで終了です、しっかり復習しましょう
+    # Thank you for your time.
+    
+    Hope you all found this quiz helpful and enjoyable

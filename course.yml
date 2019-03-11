@@ -46,7 +46,7 @@
             </div>
             <a class="navbar-brand" href="/">
               <button type="button" class="btn btn-primary">
-              TOPへ
+              TOP ^
               </button>
             </a>
           </div>
@@ -56,7 +56,7 @@
         <div class="list-group">
           <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">Learn Japanese Here<span class="badge badge-primary">Lessons and quizes</span></h4>
+              <h4 class="mb-1">Learn Japanese Here <span class="badge badge-primary">Lessons and quizes</span></h4>
             </div>
             <small>Quiz</small>
             <p class="mb-1">N5 Quiz</p>
@@ -70,6 +70,26 @@
             </div>
             <small>Videos</small>
             <p class="mb-1">N5 Lesson</p>
+            <button type="button" class="btn btn-primary">
+              Click Here To Start
+            </button>
+          </a>
+          <a href="flow:vocab_N5" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
+            </div>
+            <small>Vocabulary quiz N5</small>
+            <p class="mb-1">Check how much you know</p>
+            <button type="button" class="btn btn-primary">
+              Click Here To Start
+            </button>
+          </a>
+          <a href="flow:vocab_N4" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
+            </div>
+            <small>Vocabulary quiz N4</small>
+            <p class="mb-1">Check how much you know</p>
             <button type="button" class="btn btn-primary">
               Click Here To Start
             </button>
