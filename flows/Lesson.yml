@@ -26,7 +26,7 @@ pages:
        
 -
     type: Page
-    id: vectors
+    id: l1
     content: |
 
         # Lesson 1
@@ -38,12 +38,12 @@ pages:
         
 -
     type: Page
-    id: vectors
+    id: l2
     content: |
 
-        # Lesson 1
+        # Lesson 2
         
-        So, let's start with lesson 1.
+        So, let's start with lesson 2.
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("eqHI80DfEDc") }}
