@@ -76,7 +76,7 @@
           </a>
           <a href="flow:vocab_N5" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
+              <h4 class="mb-1"> N5 Vocabulary quiz <span class="badge badge-primary">Study well</span></h4>
             </div>
             <small>Vocabulary quiz N5</small>
             <p class="mb-1">Check how much you know</p>
@@ -86,7 +86,7 @@
           </a>
           <a href="flow:vocab_N4" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
+              <h4 class="mb-1"> N4 Vocabulary quiz <span class="badge badge-primary">Study well</span></h4>
             </div>
             <small>Vocabulary quiz N4</small>
             <p class="mb-1">Check how much you know</p>
