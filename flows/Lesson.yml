@@ -34,12 +34,22 @@ pages:
         So, let's start with lesson 1.
         
         {% from "macros.jinja" import youtube %}
-        {{ youtube("ZNBxAEjH2A8") }}
-
+        {{ youtube("rcU0Dc1ec0U") }}
         
+-
+    type: Page
+    id: vectors
+    content: |
 
+        # Lesson 1
+        
+        So, let's start with lesson 1.
+        
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("eqHI80DfEDc") }}
+        
 completion_text: |
 
-    # End of Linear Algebra Recap
+    # End of Video
 
     Now you're ready to take the [learn](flow:Lesson).
