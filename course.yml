@@ -26,12 +26,13 @@
             var sec  = now.getSeconds(); // 秒
 
             // 数値が1桁の場合、頭に0を付けて2桁で表示する指定
+            
             if(hour < 10) { hour = "0" + hour; }
             if(min < 10) { min = "0" + min; }
             if(sec < 10) { sec = "0" + sec; }
 
             // フォーマット②
-            var clock2 = year + '年' + month + '月' + date + '日' + '（' + myDay[day] + '曜日）'  + hour + '時' + min + '分' + sec + '秒';
+            var clock2 = year + month + date + '（' + myDay[day] + '）'  + hour + min + sec;
             document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
             // 1000ミリ秒ごとに処理を実効
             window . setTimeout( "clock()", 1000);
@@ -41,7 +42,7 @@
         <nav class="navbar navbar-default alert-success">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">JLPT N3完全復習コース</a>
+              <a class="navbar-brand" href="#">JLPT N5-N4 Lessons</a>
             </div>
             <a class="navbar-brand" href="/">
               <button type="button" class="btn btn-primary">
@@ -51,56 +52,26 @@
           </div>
         </nav>
         <div id="clock-02" class="text-right"></div>
-        <small>聞くは一時の恥、聞かぬは一生の恥(Better to ask the way than to go astray.)</small>
+        <small>Better to ask the way than to go astray.</small>
         <div class="list-group">
           <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">日本語 の LMS (THUJI no desu)<span class="badge badge-primary">基礎</span></h4>
+              <h4 class="mb-1">Learn Japanese Here<span class="badge badge-primary">Lessons and quizes</span></h4>
             </div>
-            <small>想定時間</small>
-            <p class="mb-1">N5語彙1</p>
+            <small>Quiz</small>
+            <p class="mb-1">N5 Quiz</p>
             <button type="button" class="btn btn-primary">
-              受講する xxx
+              Click Here To Start
             </button>
           </a>
           <a href="flow:Lesson" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
             </div>
-            <small>videos</small>
+            <small>Videos</small>
             <p class="mb-1">N5 Lesson</p>
             <button type="button" class="btn btn-primary">
-              受講する xxx
-            </button>
-          </a>
-          <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">確認問題にチャレンジ   <span class="badge badge-primary">テスト</span></h4>
-            </div>
-            <small>想定時間</small>
-            <p class="mb-1">N3語彙2</p>
-            <button type="button" class="btn btn-primary">
-              受講する 
-            </button>
-          </a>
-          <a href="flow:quiz-test_dokkai" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">文法問題   <span class="badge badge-primary">応用</span></h4>
-            </div>
-            <small>想定時間</small>
-            <p class="mb-1">文法問題</p>
-            <button type="button" class="btn btn-primary">
-              受講する 
-            </button>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">発音の練習   <span class="badge badge-primary">応用</span></h4>
-            </div>
-            <small>想定時間</small>
-            <p class="mb-1">発音の練習をしましょう</p>
-            <button type="button" class="btn btn-primary">
-              受講する 
+              Click Here To Start
             </button>
           </a>
         </div>
