@@ -246,8 +246,9 @@ groups:
         id: krylov10
         value: 2
         prompt: |
-         
+        
             # 漢字に　なおす
+            
             ### みちを わたるとき （ちゅういして） ください。
             
         choices:
@@ -287,6 +288,7 @@ groups:
         prompt: |
         
             # An example of inline multi question.
+            
             Complete the following paragraph
             
         question: |
@@ -314,6 +316,12 @@ groups:
         type: InlineMultiQuestion
         id: inlinemulti2
         value: 10
+        prompt: |
+        
+            # An example of inline multi question.
+            
+            Complete the following paragraph
+            
         question: |
         
             あしたくうこうでりょうしんを[[blank3]]にいきます。 5年あとであいますからほんとうに[[blank4]]です。
@@ -338,6 +346,12 @@ groups:
         type: InlineMultiQuestion
         id: inlinemulti3
         value: 10
+        prompt: |
+        
+            # An example of inline multi question.
+            
+            Complete the following paragraph
+            
         question: |
         
             この ボタン を[[blank5]] おゆがでます。のんだの とき きをつけてください、とても[[blank6]]ですよ。
