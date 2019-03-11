@@ -2,7 +2,7 @@
 
 # This brings in a helper function that is used to include pages from
 # separate files. This is optional, but conceivably useful.
-{% from "yaml-macros.yml" import indented_include %}
+
 
 
 title: "N5確認問題"
@@ -35,7 +35,6 @@ rules:
         permissions: [view,submit_answer,end_session,see_correctness,see_answer_after_submission]
     
     grade_identifier: la_quiz
-    grade_aggreagation_strategy: use_latest
     
     grading:
     -
@@ -71,7 +70,7 @@ groups:
             # 私は、困ったとき、母親より（　　）、いろいろ相談する。
             
         choices:
-            - ~CORRECT~ おば
+            - ~CORRECT~おば
             - 友情
             - つないで
             - 祝う
@@ -96,7 +95,7 @@ groups:
         choices:
         
             - 体
-            - ~CORRECT~ 顔
+            - ~CORRECT~顔
             - 顎
             - 頬
             
