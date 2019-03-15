@@ -207,7 +207,7 @@ groups:
             
         choices:
         
-            - 走りて
+            - ~CORRECT~走りて
             - 歩いて
             - 散歩して
             - 登って 
