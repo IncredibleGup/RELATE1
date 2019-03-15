@@ -24,6 +24,18 @@ pages:
         {% from "macros.jinja" import youtube %}
         {{ youtube("ZNBxAEjH2A8") }}
         
+-
+    type: Page
+    id: intro1
+    content: |
+
+        # N5日本語の勉強
+        
+        Here is the overview. 
+        
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("rcU0Dc1ec0U") }}        
+        
 completion_text: |
 
     # End of Video
