@@ -1,0 +1,219 @@
+# See http://jinja.pocoo.org/docs/latest/templates/ for syntax.
+
+# This brings in a helper function that is used to include pages from
+# separate files. This is optional, but conceivably useful.
+{% from "yaml-macros.yml" import indented_include %}
+
+
+title: "N5確認問題"
+
+# The "|" character introduces a 'block literal', which means all text indented below
+# it is taken literally. The description property holds text marked up with 'Markdown'.
+# See https://documen.tician.de/relate/content.html#relate-markup for more.
+#
+# So the '#' character below introduces a first-level headline (not a comment).
+description: |
+
+    # N5確認問題
+    
+rules:
+    start:
+    -
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+        
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+        
+    access:
+    -
+        message: "ユーザーによって表示される注意書きです"
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+    
+    grade_identifier: la_N5quiz
+    grade_aggregation_strategy: use_latest
+    
+    grading:
+    -
+        credit_percent: 100
+        
+groups:
+-
+    id: intro
+    pages:
+    
+    -
+        type: Page
+        id: welcome
+        content: |
+        
+            # さあおさらいしましょう
+            
+            ＞ Press to Get Started.
+            
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+    
+    # Pages can be given inl-line(like this one) or brought in by including.
+    # them from other lines, as below
+    
+    -
+        type: ChoiceQuestion
+        id: qq
+        value: 2
+        prompt: |
+        
+            # Ship Mail.
+            
+        choices:
+            - ~CORRECT~ふなびん
+            - ふねびん
+            - ほねびん
+            - ふのびん
+
+    -
+        type: ChoiceQuestion
+        id: qq1
+        value: 2
+        prompt: |
+        
+            # Family
+            
+        choices:
+        
+            - かそく
+            - ~CORRECT~かぞく
+            - ごかそく
+            - かあぞく
+            
+    -
+        type: ChoiceQuestion
+        id: qq2
+        value: 2
+        prompt: |
+        
+            # I got money from Father.
+            
+        choices:
+            
+            - ちちで おかねを あげた
+            - ちちで おかねを もらった
+            - ~CORRECT~ ちちに おかね を もらった
+            - ちちに おかねを あげた 
+            
+    -
+        type: ChoiceQuestion
+        id: qq3
+        value: 2
+        prompt: |
+        
+            # Wait a little for me.
+            
+        choices:
+        
+            - ちょうどもって
+            - ちょっともって
+            - ちょうどまって
+            - ~CORRECT~ちょっとまって
+            
+    -
+        type: ChoiceQuestion
+        id: qq4
+        value: 2
+        prompt: |
+        
+            # Where.
+            
+        choices:
+        
+            - ~CORRECT~どちら
+            - あちら
+            - どう
+            - ここ
+            
+    -
+        type: ChoiceQuestion
+        id: qq5
+        value: 2
+        prompt: |
+        
+            # Snow.
+            
+        choices:
+        
+            - 電
+            - 雨
+            - 風
+            - ~CORRECT~雪
+            
+    -
+        type: ChoiceQuestion
+        id: qq6
+        value: 2
+        prompt: |
+        
+            # おもいます。
+            
+        choices:
+        
+            - ~CORRECT~Think
+            - Recall
+            - Forget
+            - Remember
+            
+    -
+        type: ChoiceQuestion
+        id: qq7
+        value: 2
+        prompt: |
+        
+            # This Year.
+            
+        choices:
+        
+            - きょうねん
+            - らいねん
+            - せんねん
+            - ~CORRECT~ことし
+            
+    -
+        type: ChoiceQuestion
+        id: qq8
+        value: 2
+        prompt: |
+        
+            # Office.
+            
+        choices:
+        
+            - じしょ
+            - ~CORRECT~じむしょ
+            - としょかん
+            - しょくどう
+     
+    -
+        type: ChoiceQuestion
+        id: qq9
+        value: 2
+        prompt: |
+        
+            # Do you know a good Doctor?
+            
+        choices:
+        
+            - いい いしゃが しっていませんか
+            - いい いしゃあが しっていますか
+            - ~CORRECT~いい いしゃが しっていますか
+            - いい いしゃあが しっていませんか
+            
+completion_text: |
+
+    # Thank you for your time.
+    
+    Hope you all found this quiz helpful and enjoyable 

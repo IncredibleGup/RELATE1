@@ -1,0 +1,219 @@
+# See http://jinja.pocoo.org/docs/latest/templates/ for syntax.
+
+# This brings in a helper function that is used to include pages from
+# separate files. This is optional, but conceivably useful.
+{% from "yaml-macros.yml" import indented_include %}
+
+
+title: "N5確認問題"
+
+# The "|" character introduces a 'block literal', which means all text indented below
+# it is taken literally. The description property holds text marked up with 'Markdown'.
+# See https://documen.tician.de/relate/content.html#relate-markup for more.
+#
+# So the '#' character below introduces a first-level headline (not a comment).
+description: |
+
+    # N5確認問題
+    
+rules:
+    start:
+    -
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+        
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+        
+    access:
+    -
+        message: "ユーザーによって表示される注意書きです"
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+    
+    grade_identifier: la_kanji_quiz
+    grade_aggregation_strategy: use_latest
+    
+    grading:
+    -
+        credit_percent: 100
+        
+groups:
+-
+    id: intro
+    pages:
+    
+    -
+        type: Page
+        id: welcome
+        content: |
+        
+            # Shall we get started with KANJI.
+            
+            ＞ Press to Get Started.
+            
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+    
+    # Pages can be given inl-line(like this one) or brought in by including.
+    # them from other lines, as below
+    
+    -
+        type: ChoiceQuestion
+        id: kq
+        value: 2
+        prompt: |
+        
+            # This week.
+            
+        choices:
+            - 今週慣
+            - 今月間
+            - ~CORRECT~今週間
+            - 今週刊
+
+    -
+        type: ChoiceQuestion
+        id: kq1
+        value: 2
+        prompt: |
+        
+            # Family.
+            
+        choices:
+        
+            - 像新
+            - 家知
+            - 家坎
+            - ~CORRECT~家族
+            
+    -
+        type: ChoiceQuestion
+        id: kq2
+        value: 2
+        prompt: |
+        
+            # Movie.
+            
+        choices:
+            
+            - ~CORRECT~映画
+            - 映語
+            - 英語
+            - 英画
+            
+    -
+        type: ChoiceQuestion
+        id: kq3
+        value: 2
+        prompt: |
+        
+            # My sister.
+            
+        choices:
+        
+            - 女
+            - 彼女
+            - 妹
+            - ~CORRECT~姉
+            
+    -
+        type: ChoiceQuestion
+        id: kq4
+        value: 2
+        prompt: |
+        
+            # Holiday.
+            
+        choices:
+        
+            - 本
+            - 体
+            - ~CORRECT~休み
+            - 木
+            
+    -
+        type: ChoiceQuestion
+        id: kq5
+        value: 2
+        prompt: |
+        
+            # Between.
+            
+        choices:
+        
+            - 開
+            - 門
+            - ~CORRECT~間
+            - 問
+            
+    -
+        type: ChoiceQuestion
+        id: kq6
+        value: 2
+        prompt: |
+        
+            # Rain.
+            
+        choices:
+        
+            - 電
+            - 曇
+            - 雪
+            - ~CORRECT~雨
+            
+    -
+        type: ChoiceQuestion
+        id: kq7
+        value: 2
+        prompt: |
+        
+            # Next Year.
+            
+        choices:
+        
+            - 来週
+            - ~CORRECT~来年
+            - 今年
+            - 去年
+            
+    -
+        type: ChoiceQuestion
+        id: kq8
+        value: 2
+        prompt: |
+        
+            # Company employee.
+            
+        choices:
+        
+            - ~CORRECT~会社員
+            - 銀行員
+            - 会社
+            - 銀行
+     
+    -
+        type: ChoiceQuestion
+        id: kq9
+        value: 2
+        prompt: |
+        
+            # Walking.
+            
+        choices:
+        
+            - ~CORRECT~走りて
+            - 歩いて
+            - 散歩して
+            - 登って 
+            
+completion_text: |
+
+    # Thank you for your time.
+    
+    Hope you all found this quiz helpful and enjoyable 
