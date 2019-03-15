@@ -192,7 +192,7 @@ groups:
             
         choices:
         
-            - 会社員
+            - ~CORRECT~会社員
             - 銀行員
             - 会社
             - 銀行
