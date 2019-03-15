@@ -32,7 +32,7 @@
             if(sec < 10) { sec = "0" + sec; }
 
             // フォーマット②
-            var clock2 = year +'/'+ month +'/'+ date + '（' + myDay[day] + '）'  + hour + ':' + min + ':' + sec;
+            var clock2 = year + '/' + month + '/' + date + '（' + myDay[day] + '）'  + hour + ':' + min + ':' + sec;
             document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
             // 1000ミリ秒ごとに処理を実効
             window . setTimeout( "clock()", 1000);
@@ -80,6 +80,17 @@
             </div>
             <small>Vocabulary quiz N5</small>
             <p class="mb-1">Check how much you know</p>
+            <button type="button" class="btn btn-primary">
+              Click Here To Start
+            </button>
+          </a>
+          </a>
+          <a href="flow:kanji_Quiz" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h4 class="mb-1"> N5 Vocabulary quiz <span class="badge badge-primary">Study well</span></h4>
+            </div>
+            <small>Kanji Quiz</small>
+            <p class="mb-1"> Kanji is easy, when you keep learning.</p>
             <button type="button" class="btn btn-primary">
               Click Here To Start
             </button>
