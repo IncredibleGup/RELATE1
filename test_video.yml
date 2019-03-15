@@ -1,0 +1,31 @@
+title: "N5日本語の勉強"
+description: |
+    # Learn Japanese Language easily in English 
+
+rules:
+    access:
+    -
+        if_has_role: [student, ta, instructor]
+        permissions: [view]
+
+    grade_identifier: null
+
+pages:
+
+-
+    type: Page
+    id: intro
+    content: |
+
+        # N5日本語の勉強
+        
+        Here is the overview. 
+        
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("ZNBxAEjH2A8") }}
+        
+completion_text: |
+
+    # End of Video
+
+    Now you're ready to take the [learn](flow:Lesson).
