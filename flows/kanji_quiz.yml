@@ -135,7 +135,7 @@ groups:
             - 本
             - 体
             - ~CORRECT~休み
-            -　木
+            - 木
             
     -
         type: ChoiceQuestion
