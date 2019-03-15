@@ -55,10 +55,10 @@
         <div class="list-group">
           <a href="flow:test_video" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">trying to learn<span class="badge badge-primary">try</span></h4>
+              <h4 class="mb-1">N5 LESSONS<span class="badge badge-primary">Videos</span></h4>
             </div>
-            <small>okay</small>
-            <p class="mb-1">starting to learn huh</p>
+            <small>Videos</small>
+            <p class="mb-1">Learn with videos</p>
             <button type="button" class="btn btn-primary">
               Click here start.
             </button>
