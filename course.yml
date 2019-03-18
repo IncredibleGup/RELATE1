@@ -67,8 +67,8 @@
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1">Pronounciation practice<span class="badge badge-primary">Videos</span></h4>
             </div>
-            <small>Practice</small>
-            <p class="mb-1">Learn　how to pronounce</p>
+            <small>Practice Pronounciation</small>
+            <p class="mb-1">Learn how to pronounce</p>
             <button type="button" class="btn btn-primary">
               Click here start.
             </button>
