@@ -53,7 +53,7 @@
         <div id="clock-02" class="text-right"></div>
         <small>聞くは一時の恥、聞かぬは一生の恥(Better to ask the way than to go astray.)</small>
         <div class="list-group">
-          <a href="flow:pronounce" class="list-group-item list-group-item-action flex-column align-items-start">
+          <a href="flow:test_video" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1">N5 LESSONS    <span class="badge badge-primary">Videos</span></h4>
             </div>
