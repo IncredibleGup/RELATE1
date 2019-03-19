@@ -45,10 +45,8 @@ pages:
         
         This is the Video for N5 lesson 2 learning. 
         
-        {% macro youtube(eqHI80DfEDc) -%}
-        <iframe width="420" height="315" src="//www.youtube.com/embed/{{eqHI80DfEDc}}" frameborder="0" allowfullscreen>
-        </iframe>
-        {%- endmacro %}       
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("eqHI80DfEDc") }}       
         
 completion_text: |
 
