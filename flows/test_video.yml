@@ -19,7 +19,7 @@ pages:
 
         # N5日本語の勉強
         
-        This is the DEMO video 
+        **This is the DEMO video**
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("ZNBxAEjH2A8") }}
@@ -31,7 +31,7 @@ pages:
 
         # N5日本語の勉強
         
-        This is the Video for N5 lesson 1 learning. 
+        **This is the Video for N5 lesson 1 learning.**
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("rcU0Dc1ec0U") }}  
@@ -43,10 +43,19 @@ pages:
 
         # N5日本語の勉強
         
-        This is the Video for N5 lesson 2 learning. 
+        **This is the Video for N5 lesson 2 learning.** 
         
         {% from "macros.jinja" import youtube %}
-        {{ youtube("eqHI80DfEDc") }}       
+        {{ youtube("eqHI80DfEDc") }}  
+
+-
+    type: Page
+    id: intro2
+    content: |
+
+        # N5日本語の勉強
+        
+        **This is the Video for N5 lesson 3 coming soon.**              
         
 completion_text: |
 
