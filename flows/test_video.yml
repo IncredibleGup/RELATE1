@@ -23,6 +23,10 @@ pages:
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("ZNBxAEjH2A8") }}
+
+
+
+        **Thank You for Watching.**
         
 -
     type: Page
@@ -36,7 +40,9 @@ pages:
         {% from "macros.jinja" import youtube %}
         {{ youtube("rcU0Dc1ec0U") }} 
 
-        Thank You for Watching. 
+
+
+        **Thank You for Watching.** 
 
 -
     type: Page
@@ -49,6 +55,10 @@ pages:
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("eqHI80DfEDc") }}  
+
+
+
+        **Thank You for Watching.**
 
 -
     type: Page
