@@ -21,7 +21,8 @@ pages:
         
         **This is the DEMO video**
         
-        [click to practise](https://peace-growba.co.jp/share/thuji/pronounce1.html?fbclid=IwAR3zdyW3eWTaR-TJ0fK6EPBqpHnWrRXooH5mKOtiqXq7gdtl-F1XROiJNNI)
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("ZNBxAEjH2A8") }}
 
 
 
