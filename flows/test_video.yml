@@ -39,6 +39,7 @@ pages:
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("rcU0Dc1ec0U") }} 
+        [click to practise](https://peace-growba.co.jp/share/thuji/pronounce1.html?fbclid=IwAR3zdyW3eWTaR-TJ0fK6EPBqpHnWrRXooH5mKOtiqXq7gdtl-F1XROiJNNI
 
 
 
