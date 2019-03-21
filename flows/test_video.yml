@@ -39,7 +39,7 @@ pages:
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("rcU0Dc1ec0U") }} 
-        [_click to practise pronounciation for_ **Lesson 1 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce1.html?fbclid=IwAR3zdyW3eWTaR-TJ0fK6EPBqpHnWrRXooH5mKOtiqXq7gdtl-F1XROiJNNI)
+        [**_click to practise pronounciation for_** **Lesson 1 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce1.html?fbclid=IwAR3zdyW3eWTaR-TJ0fK6EPBqpHnWrRXooH5mKOtiqXq7gdtl-F1XROiJNNI)
 
 
 
@@ -56,7 +56,7 @@ pages:
         
         {% from "macros.jinja" import youtube %}
         {{ youtube("eqHI80DfEDc") }}  
-        [_click to practise pronounciation for_ **Lesson 2 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce2.html?fbclid=IwAR1mYujcktNdhhp4zPMUUpUqKeEbcloyEIRh2G_26ToGfL192bBO8Ly6ykA)
+        [**_click to practise pronounciation for_** **Lesson 2 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce2.html?fbclid=IwAR1mYujcktNdhhp4zPMUUpUqKeEbcloyEIRh2G_26ToGfL192bBO8Ly6ykA)
 
 
 
@@ -70,7 +70,7 @@ pages:
 
         # N5日本語の勉強
 
-        [_click to practise pronounciation for_ **Lesson 3 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce3.html?fbclid=IwAR1AZCRDNNiZPPIL_uQXK-74ZVJi1GwmS3mPdsKNhO4clx_IXVYis_Byt6o)
+        [**_click to practise pronounciation for_** **Lesson 3 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce3.html?fbclid=IwAR1AZCRDNNiZPPIL_uQXK-74ZVJi1GwmS3mPdsKNhO4clx_IXVYis_Byt6o)
         
         **The  Video for N5 lesson 3 is coming soon.**              
         
