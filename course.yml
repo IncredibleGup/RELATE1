@@ -63,7 +63,7 @@ chunks:
               Click here start.
             </button>
           </a>
-           <a href="flow:pro" class="list-group-item list-group-item-action flex-column align-items-start">
+           <a href="flow:pronounce1" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1">Pronounciation practice    <span class="badge badge-primary">Practise</span></h4>
             </div>
