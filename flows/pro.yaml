@@ -14,7 +14,7 @@ pages:
 
 -
     type: Page
-    id: intro
+    id: 1
     content: |
 
         # N5日本語の勉強
@@ -30,7 +30,7 @@ pages:
         
 -
     type: Page
-    id: intro1
+    id: 2
     content: |
 
         # N5日本語の勉強
@@ -47,7 +47,7 @@ pages:
 
 -
     type: Page
-    id: intro2
+    id: 3
     content: |
 
         # N5日本語の勉強
