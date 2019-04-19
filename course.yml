@@ -83,7 +83,7 @@ chunks:
               Start
             </button>
           </a>
-          <a href="flow:N5_kanji_Quiz" class="list-group-item list-group-item-action flex-column align-items-start">
+          <a href="flow:N5kanji_Quiz" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1"> N5 Kanji Quiz <span class="badge badge-primary">Study well and try</span></h4>
             </div>
@@ -103,9 +103,9 @@ chunks:
               Start
             </button>
           </a>
-          <a href="flow:N4_kanji_Quiz" class="list-group-item list-group-item-action flex-column align-items-start">
+          <a href="flow:N4kanji_Quiz" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1"> N4 Vocabulary quiz <span class="badge badge-primary">Study well and try</span></h4>
+              <h4 class="mb-1"> N4 Kanji quiz <span class="badge badge-primary">Study well and try</span></h4>
             </div>
             <small>Kanji quiz N4</small>
             <p class="mb-1">Check how much you know</p>
