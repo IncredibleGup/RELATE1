@@ -1,0 +1,81 @@
+title: "N5日本語の勉強"
+description: |
+    # Learn Japanese Language easily in English 
+
+rules:
+    access:
+    -
+        if_has_role: [student, ta, instructor]
+        permissions: [view]
+
+    grade_identifier: null
+
+pages:
+
+-
+    type: Page
+    id: intro
+    content: |
+
+        # N5日本語の勉強
+        
+        **This is the DEMO video**
+        
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("ZNBxAEjH2A8") }}
+
+
+
+        **Thank You for Watching.**
+        
+-
+    type: Page
+    id: intro1
+    content: |
+
+        # N5日本語の勉強
+        
+        **This is the Video for N5 lesson 1 learning.**
+        
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("rcU0Dc1ec0U") }} 
+        [**_click here to practise pronounciation for_** **Lesson 1 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce1.html?fbclid=IwAR3zdyW3eWTaR-TJ0fK6EPBqpHnWrRXooH5mKOtiqXq7gdtl-F1XROiJNNI)
+
+
+
+        **Thank You for Watching.** 
+
+-
+    type: Page
+    id: intro2
+    content: |
+
+        # N5日本語の勉強
+        
+        **This is the Video for N5 lesson 2 learning.** 
+        
+        {% from "macros.jinja" import youtube %}
+        {{ youtube("eqHI80DfEDc") }}  
+        [**_click here to practise pronounciation for_** **Lesson 2 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce2.html?fbclid=IwAR1mYujcktNdhhp4zPMUUpUqKeEbcloyEIRh2G_26ToGfL192bBO8Ly6ykA)
+
+
+
+
+        **Thank You for Watching.**
+
+-
+    type: Page
+    id: intro3
+    content: |
+
+        # N5日本語の勉強
+
+        [**_click here to practise pronounciation for_** **Lesson 3 vocabulary**](https://peace-growba.co.jp/share/thuji/pronounce3.html?fbclid=IwAR1AZCRDNNiZPPIL_uQXK-74ZVJi1GwmS3mPdsKNhO4clx_IXVYis_Byt6o)
+        
+        **The  Video for N5 lesson 3 is coming soon.**              
+        
+completion_text: |
+
+    # End of Video
+
+    Now you're ready to take the [learn](flow:Lesson).

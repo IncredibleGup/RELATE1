@@ -1,4 +1,4 @@
-﻿chunks:
+chunks:
 
 -
     title: "N3語彙　TIJ東京日本語研修所　RELATE評価用"
@@ -15,24 +15,23 @@
     content: |
         <script type="text/javascript">
           function clock() {
-            var myDay = new Array("Sun,"Mon","Tue","Wed","Thur","Fri","Sat");
+            var myDay = new Array("日","月","火","水","木","金","土");
             var now  = new Date();
-            var year = now.getFullYear();  
-            var month = now.getMonth()+1; 
-            var date = now.getDate(); 
+            var year = now.getFullYear(); // 年
+            var month = now.getMonth()+1; // 月
+            var date = now.getDate(); // 日
             var day = now.getDay();
-            var hour = now.getHours(); 
-            var min  = now.getMinutes(); 
-            var sec  = now.getSeconds(); 
+            var hour = now.getHours(); // 時
+            var min  = now.getMinutes(); // 分
+            var sec  = now.getSeconds(); // 秒
 
             // 数値が1桁の場合、頭に0を付けて2桁で表示する指定
-            
             if(hour < 10) { hour = "0" + hour; }
             if(min < 10) { min = "0" + min; }
             if(sec < 10) { sec = "0" + sec; }
 
             // フォーマット②
-            var clock2 = year + '/' + month + '/' + date + '（' + myDay[day] + '）'  + hour + ':' + min + ':' + sec;
+            var clock2 = year + '年' + month + '月' + date + '日' + '（' + myDay[day] + '曜日）'  + hour + '時' + min + '分' + sec + '秒';
             document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
             // 1000ミリ秒ごとに処理を実効
             window . setTimeout( "clock()", 1000);
@@ -40,37 +39,38 @@
           window . onload = clock;
         </script>
         <nav class="navbar navbar-default alert-success">
-          <div class="container-fluid" backgroundcolor="blue">
+          <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">JLPT N5-N4 Lessons</a>
+              <a class="navbar-brand" href="#">JLPT N3完全復習コース</a>
             </div>
             <a class="navbar-brand" href="/">
               <button type="button" class="btn btn-primary">
-              TOP ^
+              TOPへ
               </button>
             </a>
           </div>
         </nav>
         <div id="clock-02" class="text-right"></div>
-        <small>Better to ask the way than to go astray.</small>
+        <small>聞くは一時の恥、聞かぬは一生の恥(Better to ask the way than to go astray.)</small>
         <div class="list-group">
-          <a href="flow:quiz-test" class="list-group-item list-group-item-action flex-column align-items-start">
+          <a href="flow:test_video" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1">Learn Japanese Here <span class="badge badge-primary">Lessons and quizes</span></h4>
+              <h4 class="mb-1">N5 LESSONS    <span class="badge badge-primary">Videos</span></h4>
             </div>
-            <small>Quiz</small>
-            <p class="mb-1">N5 Quiz</p>
+            <small>VIDEOS</small>
+            <p class="mb-1">Learn with videos</p>
             <button type="button" class="btn btn-primary">
-              Click Here To Start
+              Click here start.
             </button>
           </a>
-          <a href="flow:Lesson" class="list-group-item list-group-item-action flex-column align-items-start">
+           <a href="flow:pro" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h4 class="mb-1"> Lesson <span class="badge badge-primary">Study well</span></h4>
+              <h4 class="mb-1">Pronounciation practice    <span class="badge badge-primary">Practise</span></h4>
             </div>
-            <small>Videos</small>
-            <p class="mb-1">N5 Lesson</p>
+            <small>Practice Pronounciation</small>
+            <p class="mb-1">Learn how to pronounce</p>
             <button type="button" class="btn btn-primary">
+<<<<<<< HEAD
               Start
             </button>
           </a>
@@ -113,6 +113,9 @@
             <p class="mb-1">Check how much you know</p>
             <button type="button" class="btn btn-primary">
               Start
+=======
+              Click here start.
+>>>>>>> 7e21c9de2f5e2ac11810d330a73a5aef9c858862
             </button>
           </a>
         </div>
