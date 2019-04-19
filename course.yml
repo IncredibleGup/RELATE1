@@ -83,7 +83,6 @@ chunks:
               Start
             </button>
           </a>
-          </a>
           <a href="flow:N5_kanji_Quiz" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1"> N5 Kanji Quiz <span class="badge badge-primary">Study well and try</span></h4>
