@@ -34,7 +34,7 @@ rules:
         message: "ユーザーによって表示される注意書きです"
         permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
     
-    grade_identifier: la_N5kanji_quiz
+    grade_identifier: la_N4kanji_quiz
     grade_aggregation_strategy: use_latest
     
     grading:
