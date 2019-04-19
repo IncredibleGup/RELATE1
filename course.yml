@@ -70,7 +70,6 @@ chunks:
             <small>Practice Pronounciation</small>
             <p class="mb-1">Learn how to pronounce</p>
             <button type="button" class="btn btn-primary">
-<<<<<<< HEAD
               Start
             </button>
           </a>
@@ -109,13 +108,10 @@ chunks:
             <div class="d-flex w-100 justify-content-between">
               <h4 class="mb-1"> N4 Vocabulary quiz <span class="badge badge-primary">Study well and try</span></h4>
             </div>
-            <small>Vocabulary quiz N4</small>
+            <small>Kanji quiz N4</small>
             <p class="mb-1">Check how much you know</p>
             <button type="button" class="btn btn-primary">
               Start
-=======
-              Click here start.
->>>>>>> 7e21c9de2f5e2ac11810d330a73a5aef9c858862
             </button>
           </a>
         </div>
