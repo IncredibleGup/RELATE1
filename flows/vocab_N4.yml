@@ -31,7 +31,7 @@ rules:
         
     access:
     -
-        message: "ユーザーによって表示される注意書きです"
+        message: "Depends on users"
         permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
     
     grade_identifier: la_N4quiz
@@ -53,7 +53,7 @@ groups:
         
             # Lets get started
             
-            ＞ Start by pressing this button.
+            ＞ Start by clicking this button.
             
 -
     id: quiz_start
