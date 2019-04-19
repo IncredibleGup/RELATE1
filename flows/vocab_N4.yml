@@ -5,7 +5,7 @@
 {% from "yaml-macros.yml" import indented_include %}
 
 
-title: "N5確認問題"
+title: "N4 Vocabulary Quiz"
 
 # The "|" character introduces a 'block literal', which means all text indented below
 # it is taken literally. The description property holds text marked up with 'Markdown'.
@@ -14,7 +14,7 @@ title: "N5確認問題"
 # So the '#' character below introduces a first-level headline (not a comment).
 description: |
 
-    # N5確認問題
+    # N4 Vocabulary Quiz
     
 rules:
     start:
