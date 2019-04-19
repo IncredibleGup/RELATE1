@@ -78,6 +78,188 @@ groups:
             - はっぴょう
             - はつおん
             
+    -
+        type: ChoiceQuestion
+        id: q11
+        value: 2
+        prompt: |
+        
+            # Exception
+            
+        choices:
+            - しかし
+            - にがい
+            - ~CORRECT~ いがい
+            - いっがい
+            
+    -
+        type: ChoiceQuestion
+        id: q12
+        value: 2
+        prompt: |
+        
+            # More than
+            
+        choices:
+            - もと
+            - もういちど
+            - いか
+            - ~CORRECT~ いじょう
+            
+    -
+        type: ChoiceQuestion
+        id: q13
+        value: 2
+        prompt: |
+        
+            # Visit
+            
+        choices:
+            - ~CORRECT~ うかがう
+            - めしあがる
+            - ごらんになります
+            - さそいます
+            
+    -
+        type: ChoiceQuestion
+        id: q14
+        value: 2
+        prompt: |
+        
+            # Driver
+            
+        choices:
+            - うんてんひと
+            - うんてんしゃ
+            - ~CORRECT~ うんてんしゅ
+            - うんてんいん
+            
+    -
+        type: ChoiceQuestion
+        id: q15
+        value: 2
+        prompt: |
+        
+            # Celebration
+            
+        choices:
+            - おみまい
+            - ~CORRECT~ おいわい
+            - かんしゃ
+            - ほもんする
+            
+    -
+        type: ChoiceQuestion
+        id: q16
+        value: 2
+        prompt: |
+        
+            # Husband
+            
+        choices:
+            - おと
+            - ~CORRECT~ おっと
+            - しんゆう
+            - ゆうしん
+            
+    -
+        type: ChoiceQuestion
+        id: q17
+        value: 2
+        prompt: |
+        
+            # Hang
+            
+        choices:
+            - ペースト
+            - はきます
+            - かけります
+            - ~CORRECT~ かけます
+            
+    -
+        type: ChoiceQuestion
+        id: q18
+        value: 2
+        prompt: |
+        
+            # Tidy up
+            
+        choices:
+            - かたります
+            - かたすけます
+            - かたちます
+            - ~CORRECT~ かたずけます
+            
+    -
+        type: ChoiceQuestion
+        id: q19
+        value: 2
+        prompt: |
+        
+            # Rules
+            
+        choices:
+            - ~CORRECT~ きそく
+            - きぞく
+            - きっそく
+            - きっぞく
+            
+    -
+        type: ChoiceQuestion
+        id: q110
+        value: 2
+        prompt: |
+        
+            # Experience
+            
+        choices:
+            - きいけん
+            - きけん
+            - けけん
+            - ~CORRECT~ けいけん
+            
+    -
+        type: ChoiceQuestion
+        id: q111
+        value: 2
+        prompt: |
+        
+            # Government Worker
+            
+        choices:
+            - こういん
+            - ~CORRECT~ こうむいん
+            - こむいん
+            - こいん
+            
+    -
+        type: ChoiceQuestion
+        id: q112
+        value: 2
+        prompt: |
+        
+            # Sufficient
+            
+        choices:
+            - じゅいぶん
+            - じゅぶん
+            - ~CORRECT~ じゅうぶん
+            - じぶん
+            
+    -
+        type: ChoiceQuestion
+        id: q113
+        value: 2
+        prompt: |
+        
+            # Woman
+            
+        choices:
+            - だんせい
+            - ~CORRECT~ じょせい
+            - だせい
+            - じょうせい
+            
 completion_text: |
 
     # Thank you for your time.

@@ -4,7 +4,7 @@
 {# may do undesired things with such deeply indented content. #}
 
 {% macro youtube(id) -%}
-  <iframe width="420" margin-left:"auto" margin-right:"auto" height="315" src="//www.youtube.com/embed/{{id}}" frameborder="0" allowfullscreen>
+  <iframe width="420" align="center" height="315" src="//www.youtube.com/embed/{{id}}" frameborder="0" allowfullscreen>
   </iframe>
 
   <div class="well" markdown="1">
@@ -21,7 +21,7 @@
   <h4 class="panel-title" markdown="span">
   <a data-toggle="collapse" href="#{{ id }}" markdown="span">
   {{ title }}
-  <span style="font-size:x-small">(click to view)</span>
+  <span style="font-size:small">(click to view)</span>
   </a>
   </h4>
   </div>

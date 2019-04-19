@@ -1,0 +1,219 @@
+# See http://jinja.pocoo.org/docs/latest/templates/ for syntax.
+
+# This brings in a helper function that is used to include pages from
+# separate files. This is optional, but conceivably useful.
+{% from "yaml-macros.yml" import indented_include %}
+
+
+title: "N5確認問題"
+
+# The "|" character introduces a 'block literal', which means all text indented below
+# it is taken literally. The description property holds text marked up with 'Markdown'.
+# See https://documen.tician.de/relate/content.html#relate-markup for more.
+#
+# So the '#' character below introduces a first-level headline (not a comment).
+description: |
+
+    # N5確認問題
+    
+rules:
+    start:
+    -
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+        
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+        
+    access:
+    -
+        message: "ユーザーによって表示される注意書きです"
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+    
+    grade_identifier: la_N5kanji_quiz
+    grade_aggregation_strategy: use_latest
+    
+    grading:
+    -
+        credit_percent: 100
+        
+groups:
+-
+    id: intro
+    pages:
+    
+    -
+        type: Page
+        id: welcome
+        content: |
+        
+            # Shall we get started with KANJI.
+            
+            ＞ Press to Get Started.
+            
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+    
+    # Pages can be given in-line(like this one) or brought in by including.
+    # them from other lines, as below
+    
+    -
+        type: ChoiceQuestion
+        id: kqq
+        value: 2
+        prompt: |
+        
+            # Map
+            
+        choices:
+            - 意図
+            - 合図
+            - ~CORRECT~ 地図
+            - 図
+
+    -
+        type: ChoiceQuestion
+        id: kqq1
+        value: 2
+        prompt: |
+        
+            # Head
+            
+        choices:
+        
+            - 顔
+            - ~CORRECT~ 頭
+            - 腹
+            - 頑
+            
+    -
+        type: ChoiceQuestion
+        id: kqq2
+        value: 2
+        prompt: |
+        
+            # Medicine
+            
+        choices:
+            
+            - 楽り
+            - 薬り
+            - 楽
+            - ~CORRECT~ 薬
+            
+    -
+        type: ChoiceQuestion
+        id: kqq3
+        value: 2
+        prompt: |
+        
+            # Think
+            
+        choices:
+        
+            - 教える
+            - ~CORRECT~ 考える
+            - 送える
+            - 思える
+            
+    -
+        type: ChoiceQuestion
+        id: kqq4
+        value: 2
+        prompt: |
+        
+            # Die
+            
+        choices:
+        
+            - ~CORRECT~ 死ぬ
+            - 衣ぬ
+            - 花ぬ
+            - 信ぬ
+            
+    -
+        type: ChoiceQuestion
+        id: kqq5
+        value: 2
+        prompt: |
+        
+            # Library
+            
+        choices:
+        
+            - 図書問
+            - 図書間
+            - ~CORRECT~ 図書館
+            - 図書簡
+            
+    -
+        type: ChoiceQuestion
+        id: kqq6
+        value: 2
+        prompt: |
+        
+            # Kind
+            
+        choices:
+        
+            - 親友
+            - ~CORRECT~ 親切
+            - 新設
+            - 新宿
+            
+    -
+        type: ChoiceQuestion
+        id: kqq7
+        value: 2
+        prompt: |
+        
+            # Weak
+            
+        choices:
+        
+            - 強い
+            - ~CORRECT~　弱い
+            - 宇い
+            - 弱わい
+            
+    -
+        type: ChoiceQuestion
+        id: kqq8
+        value: 2
+        prompt: |
+        
+            # Prefecture
+            
+        choices:
+        
+            - ~CORRECT~ 県
+            - 直
+            - 都
+            - 区
+     
+    -
+        type: ChoiceQuestion
+        id: kqq9
+        value: 2
+        prompt: |
+        
+            # Correct
+            
+        choices:
+        
+            - 上しい
+            - 止しい
+            - ~CORRECT~ 正しい
+            - 工しい 
+            
+completion_text: |
+
+    # Thank you for your time.
+    
+    Hope you all found this quiz helpful and enjoyable 
