@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>TIJ Web Speech</title>
+<script>
+
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+
+    if (response.status === 'connected') {
+
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+
+    } else {
+
+    }
+  }
+
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId: 515566662249917,
+    cookie     : true,
+
+    xfbml      : true,
+    version: 'v3.1'
+  });
+
+  window.fblogoff = function(){
+    FB.getLoginStatus(function(response) {
+        if (response && response.status === 'connected') {
+            FB.logout(function(response) {
+                document.location.reload();
+            });
+        }
+    });
+  }
+
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me',{fields: 'id,name,email,picture'}, function(response) {
+      console.log('Successful login for: ' + response.name);
+
+      document.getElementById('uicon').innerHTML =
+        ''  + '<img id="icon_img" src ="'+response.picture.data.url+'" class="rounded-circle" width="70%" alt="'+response.name+'" onClick="fblogoff();">';
+
+	  document.getElementById('fb_button').style.display="none";
+
+      console.log(response);
+    });
+  }
+</script>
+<script type="text/javascript"src="//webfonts.sakura.ne.jp/js/sakura.js"></script>
+<script>
+window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+var recognition = new webkitSpeechRecognition();
+recognition.lang = 'ja';
+var answer='';
+recognition.onresult = function(event){
+    console.log("onresult");
+    console.log(event);
+    var results = event.results;
+    for (var i = event.resultIndex; i<results.length; i++)
+        document.getElementById('result_text').innerHTML = results[i][0].transcript;
+
+    var s='';
+    var result = results[0][0].transcript;
+    if (document.getElementById('result_text').innerText == answer){
+  	  s="正解";
+      document.getElementById(answer).className ="bg-success";
+    }else{
+      s="不正解";
+      result = document.getElementById('expected_text').innerHTML + " (" + document.getElementById('result_text').innerHTML+")";
+    }
+    var s2='発声練習';
+    if (document.getElementById("icon_img")){
+    	s2=document.getElementById("icon_img").alt;
+    }
+
+  	gtag('event', s2, {'event_category': s,
+  										'event_label': result});
+
+    if (document.getElementById('result_text').innerText == answer){
+      var s = tblTbody.rows[i].id;
+      var j = (localStorage.getItem(answer)) ? localStorage.getItem(answer):0;
+      j = isNaN(parseInt(j)) ? 0 : parseInt(j)+1;
+      var element = document.getElementById(answer).cells[0];
+      while (element.firstChild.nextSibling) element.removeChild(element.firstChild.nextSibling);
+      var ss=document.getElementById(answer).cells[0].innerHTML;
+      document.getElementById(answer).cells[0].innerHTML = ss+'<span class="badge badge-info">'+j+'</span>';
+      localStorage.setItem(answer, j);
+    }
+
+
+}
+rec_start = function(s,c){
+		answer = c;
+		document.getElementById('result_text').innerHTML = "";
+		document.getElementById('expected_text').innerHTML = s;
+		recognition.start();
+}
+
+</script>
+
+</head>
+<body>
+<header class="topbar">
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #98fb98;">
+    <div class="container">
+      <a class="navbar-brand " href="/" style='font-family: "Cinema Letter";'>ゴイス[はつおん]</a>
+      <div id="uicon"></div>
+      <fb:login-button id="fb_button" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+    </div>
+  </nav>
+</header>
+<br>
+<div class="container">
+	<div class="card">
+	  <h7 id="expected_text" class="card-header"></h7>
+	  <h6 id="result_text" class="card-body"></h6>
+	  </div>
+	</div>
+</div>
+<br>
+<table id="table_1" border=1 class="table table-striped">
+  <tr id="行きます">
+    <td>いきます</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('いきます','行きます');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="来ます">
+    <td>きます</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('きます','来ます');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="帰ります">
+    <td>かえります</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('かえります','帰ります');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="駅">
+    <td>えき</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('えき','駅');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="飛行機">
+    <td>ひこうき</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('ひこうき','飛行機');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="船">
+    <td>ふね</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('ふね','船');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="電車">
+    <td>でんしゃ</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('でんしゃ','電車');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="地下鉄">
+    <td>ちかてつ</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('ちかてつ','地下鉄');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="自転車">
+    <td>じてんしゃ</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('じてんしゃ','自転車');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="歩いて">
+    <td>あるいて</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('あるいて','歩いて');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="友達">
+    <td>ともだち</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('ともだち','友達');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+  <tr id="家族">
+    <td>かぞく</td>
+    <td width = "20%">
+      <div class="float-right">
+        <input type="button" onClick="rec_start('かぞく','家族');" value="録音"　>
+      </div>
+    </td>
+  </tr>
+</tr>
+<tr id="先週">
+  <td>せんしゅう</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('せんしゅう','先週');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="今週">
+  <td>こんしゅう</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('こんしゅう','今週');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="来週">
+  <td>らいしゅう</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('らいしゅう','来週');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="先月">
+  <td>せんげつ</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('せんげつ','先月');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="今月">
+  <td>こんげつ</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('こんげつ','今月');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="来月">
+  <td>らいげつ</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('らいげつ','来月');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="去年">
+  <td>きょねん</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('きょねん','去年');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="今年">
+  <td>ことし</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('ことし','今年');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</tr>
+<tr id="来年">
+  <td>らいねん</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('らいねん','来年');" value="録音"　>
+    </div>
+  </td>
+</tr>
+<tr id="誕生日">
+  <td>たんじょうび</td>
+  <td width = "20%">
+    <div class="float-right">
+      <input type="button" onClick="rec_start('たんじょうび','誕生日');" value="録音"　>
+    </div>
+  </td>
+</tr>
+</table>
+
+<br>
+<footer id="footer"　 style="background-color: #98fb98;">
+    <div class="container">
+      <div class="footer-holder">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="logo">
+              <span class="copyright">Copyright© 2017 Peace Growba Co., Ltd. All Rights Reserved.</span>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="text-holder">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125701794-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125701794-1');
+</script>
+<script>
+	var tblTbody = document.getElementById('table_1');
+	for (var i=0, rowLen=tblTbody.rows.length; i<rowLen; i++) {
+			var s = tblTbody.rows[i].id;
+			console.log(s);
+			var j = (localStorage.getItem(s)) ? localStorage.getItem(s):0;
+			if (j>0){
+				var ss=tblTbody.rows[i].cells[0].innerHTML;
+				tblTbody.rows[i].cells[0].innerHTML = ss+'<span class="badge badge-info">'+j+'</span>';
+			}
+			console.log(j);
+	}
+</script>
