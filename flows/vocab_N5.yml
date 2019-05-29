@@ -1,0 +1,429 @@
+# See http://jinja.pocoo.org/docs/latest/templates/ for syntax.
+
+# This brings in a helper function that is used to include pages from
+# separate files. This is optional, but conceivably useful.
+{% from "yaml-macros.yml" import indented_include %}
+
+
+title: "N5 Quiz"
+
+# The "|" character introduces a 'block literal', which means all text indented below
+# it is taken literally. The description property holds text marked up with 'Markdown'.
+# See https://documen.tician.de/relate/content.html#relate-markup for more.
+#
+# So the '#' character below introduces a first-level headline (not a comment).
+description: |
+
+    # N5 Quiz
+    
+rules:
+    start:
+    -
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+        
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+        
+    access:
+    -
+        message: "Depends on the user"
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+    
+    grade_identifier: la_N5quiz
+    grade_aggregation_strategy: use_latest
+    
+    grading:
+    -
+        credit_percent: 100
+        
+groups:
+-
+    id: intro
+    pages:
+    
+    -
+        type: Page
+        id: welcome
+        content: |
+        
+            # Let's Start
+            
+            ＞ Click this button to start.
+            
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+    
+    # Pages can be given inl-line(like this one) or brought in by including.
+    # them from other lines, as below
+    
+    -
+        type: ChoiceQuestion
+        id: qz
+        value: 2
+        prompt: |
+        
+            ###（　　　）はアンです。
+            
+        choices:
+            - どういたしまして
+            - どうぞ よろしく
+            - ~CORRECT~ わたし
+            - どうぞ
+            
+    -
+        type: ChoiceQuestion
+        id: qz2
+        value: 2
+        prompt: |
+        
+            ###A：「やまださんですか。」B：「はい、（　　　　）。」
+            
+        choices:
+        
+            - どういたしまして
+            - どうぞ よろしく
+            - ~CORRECT~ そうです
+            - さようなら
+            
+    -
+        type: ChoiceQuestion
+        id: qz3
+        value: 2
+        prompt: |
+        
+            ###A：「やまださんですか。」B：「いいえ、（　　　　）。たなかです。」
+            
+        choices:
+            
+            - どうぞ
+            - かぞく
+            - どうぞ よろしく
+            - ~CORRECT~ ちがいます
+            
+    -
+        type: ChoiceQuestion
+        id: qz4
+        value: 2
+        prompt: |
+        
+            ###「はじめまして。」「（　　　　）。」
+            
+        choices:
+        
+            - ~CORRECT~ どうぞ よろしく
+            - かぞく
+            - ちがいます
+            - どういたしまして
+            
+    -
+        type: ChoiceQuestion
+        id: qz5
+        value: 2
+        prompt: |
+        
+            ###A：「ありがとう。」B：「（　　　　）。」
+            
+        choices:
+        
+            - どうぞ よろしく
+            - ~CORRECT~ どういたしまして
+            - そうです
+            - わたし
+            
+    -
+        type: ChoiceQuestion
+        id: qz6
+        value: 2
+        prompt: |
+        
+            ###A：「（　　　　）。」B：「じゃあ、また。」
+            
+        choices:
+        
+            - わたし
+            - どういたしまして
+            - そうです
+            - ~CORRECT~ さようなら
+            
+    -
+        type: ChoiceQuestion
+        id: qz7
+        value: 2
+        prompt: |
+        
+            ###A：「（　　　　）。」B：「どうも。」
+            
+        choices:
+        
+            - ちがいます
+            - どうぞ よろしく
+            - ~CORRECT~ どうぞ
+            - かぞく
+            
+    -
+        type: ChoiceQuestion
+        id: qz8
+        value: 2
+        prompt: |
+        
+            ###（　　　）は７にんです。
+            
+        choices:
+        
+            - ~CORRECT~ かぞく
+            - どういたしまして
+            - そうです
+            - どうぞ
+            
+    -
+        type: ChoiceQuestion
+        id: qz9
+        value: 2
+        prompt: |
+		
+            ###（　　　）にねこがいます。
+            
+        choices:
+        
+            - くに
+            - ~CORRECT~ うち
+            - よにん
+            - はは
+            
+    -
+        type: ChoiceQuestion
+        id: qz10
+        value: 2
+        prompt: |
+            
+            ###わたしの（　　　　）はマレーシアです。
+            
+        choices:
+        
+            - はは
+            - ふたり
+            - おとうさん
+            - ~CORRECT~ くに
+            
+    -
+        type: ChoiceQuestion
+        id: qz11
+        value: 2
+        prompt: |
+        
+            ###クリスさんはアメリカ（　　　　）です。
+            
+        choices:
+        
+            - おとうさん
+            - ~CORRECT~ じん
+            - ふたり
+            - おにいさん
+			
+    -
+        type: ChoiceQuestion
+        id: qz12
+        value: 2
+        prompt: |
+        
+            ###ひとり、（　　　　）、さんにん
+            
+        choices:
+        
+            - はは
+            - ~CORRECT~ ふたり
+            - くに
+            - よにん
+			
+    -
+        type: ChoiceQuestion
+        id: qz13
+        value: 2
+        prompt: |
+        
+            ###（　　　）、ごにん、ろくにん
+            
+        choices:
+        
+            - くに
+            - じん
+            - ~CORRECT~ よにん
+            - おにいさん
+			
+    -
+        type: ChoiceQuestion
+        id: qz14
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　やまださんのごかぞくわたしのちち　　　　　やまださんの（　　　　）
+            
+        choices:
+        
+            - はは
+            - じん
+            - ~CORRECT~ おとうさん
+            - ふたり
+			
+    -
+        type: ChoiceQuestion
+        id: qz15
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　　やまださんのごかぞくわたしの（　　　　）　　　　やまださんのおかあさん
+            
+        choices:
+        
+            - うち
+            - ~CORRECT~ はは
+            - おにいさん
+            - ふたり
+			
+    -
+        type: ChoiceQuestion
+        id: qz16
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　やまださんのごかぞくわたしのあに　　　　　やまださんの（　　　　）
+            
+        choices:
+        
+            - よにん
+            - くに
+            - ~CORRECT~ おにいさん
+            - うち
+			
+    -
+        type: ChoiceQuestion
+        id: qz17
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　　やまださんのごかぞくわたしの（　　　　）　　　　　 やまださんのおねえさん
+            
+        choices:
+        
+            - ごりょうしん
+            - ちず
+            - 中国
+            - ~CORRECT~ あね
+			
+    -
+        type: ChoiceQuestion
+        id: qz18
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　やまださんのごかぞくわたしのおとうと　　　やまださんの（　　　　）
+            
+        choices:
+        
+            - いもうとさん
+            - おんな
+            - ~CORRECT~ おとうとさん
+            - あね
+			
+    -
+        type: ChoiceQuestion
+        id: qz19
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　やまださんのごかぞくわたしのいもうと　　　やまださんの（　　　　）
+            
+        choices:
+        
+            - ごりょうしん
+            - CORRECT~ いもうとさん
+            - こども
+            - おんな
+			
+    -
+        type: ChoiceQuestion
+        id: qz20
+        value: 2
+        prompt: |
+        
+            ###わたしのかぞく　　　　やまださんのごかぞくわたしのりょうしん　　やまださんの（　　　　）
+            
+        choices:
+        
+            - おとうとさん
+            - ~CORRECT~ ごりょうしん
+            - おんな
+            - こども
+			
+    -
+        type: ChoiceQuestion
+        id: qz21
+        value: 2
+        prompt: |
+        
+            ###にほんの（　　　）はありますか。
+            
+        choices:
+        
+            - おとうとさん
+            - こども
+            - おんな
+            - ~CORRECT~ ちず
+			
+    -
+        type: ChoiceQuestion
+        id: qz22
+        value: 2
+        prompt: |
+        
+            ###わたしは（　　　）からきました。
+            
+        choices:
+        
+            - あね
+            - ごりょうしん
+            - ちず
+            - ~CORRECT~ 中国
+			
+    -
+        type: ChoiceQuestion
+        id: qz23
+        value: 2
+        prompt: |
+        
+            ###おとこのこ ⇔ （　　　）のこ
+            
+        choices:
+        
+            - 中国
+            - こども
+            - ~CORRECT~ おんな
+            - ごりょうしん
+			
+    -
+        type: ChoiceQuestion
+        id: qz24
+        value: 2
+        prompt: |
+        
+            ###おとな ⇔ （　　　）
+            
+        choices:
+        
+            - いもうとさん
+            - ちず
+            - ~CORRECT~ こども
+            - おとうとさん
+                                                                                                                    
+completion_text: |
+
+    # Thank you for your time.
+    
+    Hope you all found this quiz helpful and enjoyable
